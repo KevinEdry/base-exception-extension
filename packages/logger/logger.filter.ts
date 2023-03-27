@@ -14,8 +14,6 @@ export class LoggerExceptionFilter extends BaseExceptionFilter {
   override catch(exception: unknown, host: ArgumentsHost) {
     const ctx = host.switchToHttp();
     const request = ctx.getRequest<ExtendedExpressRequest>();
-    console.log("????");
-    console.log(exception);
     if (request.logger != null) {
       request.logger.error(exception);
     } else {
