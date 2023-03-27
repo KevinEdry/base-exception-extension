@@ -1,0 +1,17 @@
+{
+  "name": "base-exception-extension",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@7.2.1",
+  "engines": {
+    "node": ">=16.14.2",
+    "pnpm": ">=7.9.0"
+  }
+}
